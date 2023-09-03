@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilosIA.css">
+    <title>Mi Jardín</title>
+</head>
+
+<body>
+    <header>
+        <h1>Mi Jardín</h1>
+        <nav>
+            <ul>
+                <li><a href="#contacto">Contacto</a></li>
+                <li><a href="#quien-somos">Quién Somos</a></li>
+                <li><a href="#categoria">Categoría</a></li>
+                <li><a href="#actividad_uno">ACTIVIDAD 1 - PROYECTO DE SOFTWARE</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros:</p>
+
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </section>
+
+    <section id="quien-somos">
+        <h2>Quién Somos</h2>
+        <p>Soy Carrera, Ignacio Martín (quien mantiene el sitio) estudiante de la Facultad de Informatica de la
+            "Universidad Nacional de La Plata (UNLP)".</p>
+    </section>
+
+    <section id="categoria">
+        <h2>Plantas</h2>
+        <label for="categoria-select">Selecciona una categoría:</label>
+        <input type="radio" name="categoria" id="interior" checked>
+        <label for="interior">Interior</label>
+        <input type="radio" name="categoria" id="exterior">
+        <label for="exterior">Exterior</label>
+
+        <div id="plantas-lista">
+            <!-- Plantas de Interior -->
+            <div class="planta interior">
+                <img src="imagenes/Interior/ficus_lira.jpg" alt="Ficus lyrata (Ficus lira)">
+                <h3>Ficus lyrata (Ficus lira)</h3>
+                <a href="info/Interior/Ficus lyrata (Ficus lira).pdf" target="_blank">+info</a>
+            </div>
+
+            <div class="planta interior">
+                <img src="imagenes/Interior/Cactus de Navidad (Schlumbergera).jpg"
+                    alt="Cactus de Navidad (Schlumbergera)">
+                <h3>Cactus de Navidad (Schlumbergera)</h3>
+                <a href="info/Interior/Cactus de Navidad (Schlumbergera).pdf" target="_blank">+info</a>
+            </div>
+
+            <div class="planta interior">
+                <img src="imagenes/Interior/Espatifilo (Spathiphyllum).jpg" alt="Espatifilo (Spathiphyllum)">
+                <h3>Espatifilo (Spathiphyllum)</h3>
+                <a href="info/Interior/Espatifilo (Spathiphyllum).pdf" target="_blank">+info</a>
+            </div>
+
+            <!-- Plantas de Exterior -->
+            <div class="planta exterior">
+                <img src="imagenes/Exterior/Lavanda (Lavandula angustifolia).jpg"
+                    alt="Lavanda (Lavandula angustifolia)">
+                <h3>Lavanda (Lavandula angustifolia)</h3>
+                <a href="info/Exterior/Lavanda (Lavandula angustifolia).pdf" target="_blank">+info</a>
+            </div>
+
+            <div class="planta exterior">
+                <img src="imagenes/Exterior/Rosa (Rosa spp.).jpg" alt="Rosa (Rosa spp.)">
+                <h3>Rosa (Rosa spp.)</h3>
+                <a href="info/Exterior/Rosa (Rosa spp.).pdf" target="_blank">+info</a>
+            </div>
+
+            <div class="planta exterior">
+                <img src="imagenes/Exterior/Tomate (Solanum lycopersicum).jpg" alt="Tomate (Solanum lycopersicum)">
+                <h3>Tomate (Solanum lycopersicum)</h3>
+                <a href="info/Exterior/Tomate (Solanum lycopersicum).pdf" target="_blank">+info</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="actividad_uno">
+        <h2><a href="https://catedras.linti.unlp.edu.ar/mod/quiz/attempt.php?attempt=79712&cmid=38211" target="_blank">ACTIVIDAD 1 - PROYECTO DE SOFTWARE</a></h2>
+        <p><a href="https://www.youtube.com/channel/UC6PnuLnvB18oT__rulxU5Tg" target="_blank">Video de actividad 1</a></p>
+    </section>
+
+</body>
+
+</html>

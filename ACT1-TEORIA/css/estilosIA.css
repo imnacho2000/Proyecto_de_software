@@ -1,0 +1,89 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section {
+    margin: 20px;
+    text-align: center;
+}
+
+/* Estilos para el formulario de contacto y la información del sitio */
+/* Define tus estilos aquí */
+
+/* Estilos para la lista de plantas */
+#plantas-lista {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.planta {
+    width: calc(50% - 10px);
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+/* Ocultar todas las plantas inicialmente */
+.planta {
+    display: none;
+}
+
+/* Mostrar las plantas de la categoría seleccionada */
+#interior:checked~#plantas-lista .interior,
+#exterior:checked~#plantas-lista .exterior {
+    display: block;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .planta {
+        width: 100%;
+        font-size: 10px;
+    }
+}
+
+/* Estilos para las imágenes de las plantas */
+.planta img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.planta {
+    text-align: center;
+    /* Centra el contenido (nombre de la planta y enlace) */
+    margin-bottom: 20px;
+    /* Espacio entre las plantas */
+    width: calc(33.33% - 32px);
+    float: left;
+}
+
+
+#actividad_uno a{
+    text-decoration: none;
+}
